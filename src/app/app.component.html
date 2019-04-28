@@ -1,0 +1,1082 @@
+
+
+<!-- START PRELOADER -->
+<div class="preloader">
+  <div class="loader">
+    <div class="loading-1"></div>
+    <div class="loading-2">Loading...</div>
+  </div>
+</div>
+<!-- END PRELOADER -->
+
+<!-- START HEADER -->
+<header class="header_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="top-info-left">
+          <a href="#contact"><i class="fa fa-envelope"></i>support@coinget.io</a>
+          <a href="#contact"><i class="fa fa-phone"></i>+(1) 415 310 2296</a>
+        </div>
+      </div><!--- END COL -->
+      <div class="col-xs-12 col-sm-6">
+        <div class="top-info-right">
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+      </div><!--- END COL -->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</header>
+<!-- START HEADER -->
+
+<!-- START NAVBAR -->
+<div id="sticker" class="navbar navbar-default menu-top">
+  <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"></a>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"></a> -->
+    </div>
+    <div class="navbar-collapse collapse">
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="#home">Product</a></li>
+          <!-- <li><a class="page-scroll" href="#home">Home</a></li> -->
+          <li><a class="page-scroll" href="#about">About</a></li>
+          <li><a class="page-scroll" href="#services">API</a></li>
+          <!-- <li><a class="page-scroll" href="#team">Team</a></li>
+                        <li><a class="page-scroll" href="#news">News</a></li>						 -->
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
+
+          <li><a id="modal_trigger" href="#modal" class="btn-default btn_signin">Sign in</a>
+            <div id="modal" class="popupContainer" style="display:none;">
+              <header class="popupHeader">
+                <span class="header_title">Login</span>
+                <span class="modal_close"><i class="fa fa-times"></i></span>
+              </header>
+
+              <div class="popupBody">
+                <!-- Social Login -->
+                <div class="social_login">
+                  <div class="">
+                    <a href="#" class="social_box fb">
+                      <span class="icon"><i class="fa fa-facebook"></i></span>
+                      <span class="icon_title">Connect with Facebook</span>
+
+                    </a>
+
+                    <a href="#" class="social_box google">
+                      <span class="icon"><i class="fa fa-google-plus"></i></span>
+                      <span class="icon_title">Connect with Google</span>
+                    </a>
+                  </div>
+
+                  <div class="centeredText">
+                    <span>Or use your Email address</span>
+                  </div>
+
+                  <div class="action_btns">
+                    <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                    <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+                  </div>
+                </div>
+
+                <!-- Username & Password Login form -->
+                <div class="user_login">
+                  <form>
+                    <label>Email / Username</label>
+                    <input type="text" style="margin-bottom:0px" />
+                    <br />
+
+                    <label>Password</label>
+                    <input type="password" style="margin-bottom:0px"/>
+                    <br />
+
+
+                    <div class="action_btns">
+                      <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                      <div class="one_half last"><a href="#" class="btn btn_red" style="color:#fff">Login</a></div>
+                    </div>
+                  </form>
+
+                  <a href="#" class="forgot_password">Forgot password?</a>
+                </div>
+
+                <!-- Register Form -->
+                <div class="user_register">
+                  <form>
+                    <label>Full Name</label>
+                    <input type="text" style="margin-bottom:0px" />
+                    <br />
+
+                    <label>Email Address</label>
+                    <input type="email" style="margin-bottom:0px"/>
+                    <br />
+
+                    <label>Password</label>
+                    <input type="password" style="margin-bottom:0px" />
+                    <br />
+
+                    <div class="action_btns">
+                      <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                      <div class="one_half last"><a href="#" class="btn btn_red" style="color:#fff">Register</a></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div><!--- END LOGIN & SIGNUP -->
+          </li><!--- END MENU -->
+        </ul>
+      </nav>
+    </div>
+  </div><!--- END CONTAINER -->
+</div>
+<!-- END NAVBAR -->
+
+<!-- START LOGIN REGISTER -->
+<section class="login_register">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-xs-12 col-md-6">
+        <!--  START LOGIN FORM -->
+        <div class="modal fade" id="signin">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="login_register_title">Already a member Sign in</h4>
+              </div>
+              <div class="modal-body">
+                <div class="login">
+                  <div class="form-group">
+                    <input type="text" class=" form-control requiredField input-label" placeholder="Username" name="name">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control requiredField input-label" placeholder="Enter Password" name="password" >
+                  </div>
+                  <div class="form-group">
+                    <button class="sign-btn" type="submit" name="submit">login</button>
+                  </div>
+
+                  <a href="#signup" data-toggle="modal" data-target="#signup" class="modal_link modal-btn">Sign Up</a>
+                </div>
+              </div>
+            </div><!-- END CONTENT -->
+          </div><!-- END MODEL DIALOG -->
+        </div><!--END LOGIN FORM  -->
+
+        <!--  START SIGNUP FORM -->
+        <div class="modal fade" id="signup">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="login_register_title">Sign Up here</h4>
+              </div>
+              <div class="modal-body">
+                <div class="login">
+                  <div class="form-group">
+                    <input type="text" class=" form-control requiredField input-label" placeholder="Username" name="name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control requiredField input-label" placeholder="Email" name="name">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control requiredField input-label" placeholder="Enter Password" name="password" >
+                  </div>
+                  <div class="form-group">
+                    <button class="sign-btn" type="submit" name="submit">Sign Up</button>
+                  </div>
+
+                  <a href="#signin" data-target="#signin" class="modal_link modal-btn">Sign In</a>
+                </div>
+              </div>
+            </div><!-- END CONTENT -->
+          </div><!-- END MODEL DIALOG -->
+        </div><!--END SIGNUP FORM  -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END LOGIN REGISTER -->
+
+<section data-stellar-background-ratio="0.3" id="home" class="home_bg" style="background-image: url(../assets/img/bg/btc-home-bg.jpg);  background-size:cover; background-position: center center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-1 col-xs-12 col-md-10">
+        <div class="hero-text text-center">
+          <!-- <h2>Biggest Currency Innovation That the World Has Seen. </h2> -->
+          <h2>Crypto Time Machine </h2>
+          <h4> Select exchange, coin pair and point in time to see history price </h4>
+        </div>
+
+      </div><!--- END COL -->
+    </div>
+    <div class="row top-buffer">
+      <div class="col-md-offset-1 col-xs-12 col-md-10">
+        <div class="mat-app-background col-xs-12 col-md-12" style="color: rgba(255,255,255,.87);">
+          <!--<app-root>Loading...</app-root>-->
+          <mat-sidenav-container class="top-exchange-div" [class.m2app-dark]="isDarkTheme">
+            <div class="app-content">
+              <!-- Material Select -->
+              <mat-card>
+
+                  <mat-card-content>
+                    <!-- 1st Row -->
+                    <div class="row">
+                      <div class="col-md-12"></div>
+                      <div class="col-sm-5 col-md-5" align="center">
+                        <mat-form-field style="width: 170px;">
+                          <mat-select placeholder="Exchange Name" [(value)]="exchange" (selectionChange)="getCoin()">
+                            <mat-option *ngFor="let game of games" [value]="game.value">
+                              {{game.viewValue}}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                      </div>
+                      
+                      <!-- Timezone selector with index.js -->
+                      <div class="col-sm-6 col-md-6" align="center">
+                        <div>
+                          <mat-form-field style="width: 90%;">
+                            <mat-select    [(ngModel)]="timeZone"  (selectionChange)="getCoin()" >
+                              <mat-option value="{{timeZone}}">{{timeZone}}</mat-option>
+                              <mat-option value="GMT-12:00">(GMT-12:00) International Date Line West</mat-option>
+                              <mat-option value="GMT-11:00">(GMT-11:00) Midway Island, Samoa</mat-option>
+                              <mat-option value="-10.0">(GMT-10:00) Hawaii</mat-option>
+                              <mat-option value="GMT-9:00">(GMT-9:00) Aleutian</mat-option>
+                              <mat-option value="GMT-8:00">(GMT-8:00) Alaska</mat-option>
+                              <mat-option value="GMT-7:00">(GMT-7:00) Los Angeles</mat-option>
+                              <mat-option value="GMT-6:00">(GMT-6:00) Central America</mat-option>
+                              <mat-option value="GMT-5:00">(GMT-5:00) Central Time (US and Canada)</mat-option>
+                              <mat-option value="GMT-4:00">(GMT-4:00) Eastern Time (US and Canada)</mat-option>
+                              <mat-option value="GMT-3:00">(GMT-3:00) Santiago</mat-option>
+                              <mat-option value="GMT-2:00">(GMT-2:00) Greenland</mat-option>
+                              <mat-option value="GMT-1:00">(GMT-1:00) Cape Verde Islands</mat-option>
+                              <mat-option value="GMT">(GMT) Dublin, Edinburgh, Lisbon, London</mat-option>
+                              <mat-option value="GMT+1:00">(GMT+1:00) Greenwich, West Central Africa</mat-option>
+                              <mat-option value="GMT+2:00">(GMT+2:00) Amsterdam, Berlin, Rome, Stockholm</mat-option>
+                              <mat-option value="GMT+3:00">(GMT+3:00) Moscow, Athens, Istanbul, Helsinki</mat-option>
+                              <mat-option value="GMT+4:00">(GMT+4:00) Baku, Mauritius</mat-option>
+                              <mat-option value="GMT+5:00">(GMT+5:00) Yekaterinburg</mat-option>
+                              <mat-option value="GMT+6:00">(GMT+6:00) Almaty, Novosibirsk</mat-option>
+                              <mat-option value="GMT+7:00">(GMT+7:00) Bangkok, Hanoi, Jakarta</mat-option>
+                              <mat-option value="GMT+8:00">(GMT+8:00) Beijing, Chongqing, Urumqi</mat-option>
+                              <mat-option value="GMT+9:00">(GMT+9:00) Seoul, Tokyo</mat-option>
+                              <mat-option value="GMT+9:30">(GMT+9:30) Darwin</mat-option>
+                              <mat-option value="GMT+10:00">(GMT+10:00) Canberra, Melbourne, Sydney</mat-option>
+                              <mat-option value="GMT+11:00">(GMT+11:00) Magadan, Solomon Islands</mat-option>
+                              <mat-option value="GMT+12:00">(GMT+12:00) Fiji Island, Kamchatka, Marshall Islands</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                          <!-- Can check the UTC and Local time -->
+                          <!-- <ul>
+                            <li><strong>UTC time:</strong> <span ng-class="js-TimeUtc" id="js_TimeUtc"></span></li>
+                            <li><strong>Local time:</strong> <span ng-class="js-TimeLocal" id="js_TimeLocal"></span></li>
+                          </ul> -->
+                        </div>
+                      </div>
+                      <div class="col-sm-1 col-md-1" align="center"></div>
+                    </div>
+                    
+                    <!-- 2nd Row -->
+                    <div class="row">
+                      <div class="col-sm-5 col-md-5" align="center">
+                        <mat-form-field style="width: 170px;">
+                          <mat-select placeholder="Coin Name" [(value)]="coinName" (selectionChange)="getCoin()">
+                            <mat-option *ngFor="let game of coinsNames" [value]="game.value">
+                              {{game.viewValue}}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                      </div>
+
+                      <!-- DateTime picker -->
+                      <div class="col-sm-6 col-md-6" align="center">
+                            <!-- <input type="datetime-local" step="1" placeholder="Coin Name" id="dateOfStart" name="dateOfStart" [(ngModel)]="date" (ngModelChange)="getCoin()" class="form-control"> -->
+                        <div class="input-group date" id="datetimepicker1"  >
+                            <input #dateInput class="input-datetimepicker1 form-control"     step="1" placeholder="Exchange Time"   />
+                            <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                      </div>
+                      <div class="col-sm-1 col-md-1" align="center"></div>
+                  </div>
+
+                </mat-card-content>
+
+                <div *ngIf="showTable">
+                  <mat-table class="products-table"
+                             #table [dataSource]="dataSource"
+                             matSort
+                             fusePerfectScrollbar>
+
+                    <ng-container cdkColumnDef="eventTime">
+                      <mat-header-cell *cdkHeaderCellDef mat-sort-header>Event Time</mat-header-cell>
+                      <mat-cell *cdkCellDef="let coin">
+                        <p class="text-truncate">{{coin.time}}</p>
+                      </mat-cell>
+                    </ng-container>
+                    <ng-container cdkColumnDef="price">
+                      <mat-header-cell *cdkHeaderCellDef mat-sort-header fxHide fxShow.gt-xs>Price</mat-header-cell>
+                      <mat-cell *cdkCellDef="let coin"  fxHide fxShow.gt-xs>
+                        <p class="price text-truncate">
+                          {{coin.price}}
+                        </p>
+                      </mat-cell>
+                    </ng-container>
+                    <ng-container cdkColumnDef="saveTime">
+                      <mat-header-cell *cdkHeaderCellDef mat-sort-header>Creation Date</mat-header-cell>
+                      <mat-cell *cdkCellDef="let coin">
+                        <p class="text-truncate">{{coin.savedDate | date: 'yyyy-MM-dd hh:mm:ss aa'  }}</p>
+                      </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *cdkHeaderRowDef="displayedColumns"></mat-header-row>
+
+                    <mat-row *cdkRowDef="let coin; columns: displayedColumns;"
+
+                             matRipple
+                    >
+                    </mat-row>
+
+                  </mat-table>
+                </div>
+              </mat-card>
+              <!-- /Material Select -->
+            </div>
+          </mat-sidenav-container>
+        </div>
+      </div>
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+  
+</section>
+<!-- END  HOME -->
+
+<!-- COIN PRICES WITH SCROLL ON MOBILE -->
+<section class="exchanger" style="">
+  <div class="container" style="width: 100%; height: 80%;">
+    <div class="text-center col-xs-12 col-md-12">
+      <div class="ex-prices-div">
+        <ul class="ex-prices" style="list-style-type: none;">
+          <li class="list-item">
+            <div class="text-center" >
+              <div class="list-item-currency">BTC<br/>BINANCE</div>
+              <div class="list-item-currency upgrade">
+                <span>{{binanceBTCClosePrice}} <span class="arrow-up">↗</span></span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="text-center">
+              <div class="list-item-currency">ETH<br/>BINANCE</div>
+              <div class="list-item-currency downgrade">
+                <span>{{binanceETHClosePrice}}<span class="arrow-down">↘</span></span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="text-center" >
+              <div class="list-item-currency">BTC<br/>BITTREX</div>
+              <div class="list-item-currency upgrade">
+                <span>{{bittrexBTCLastPrice}} <span class="arrow-up">↗</span></span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="text-center">
+              <div class="list-item-currency">ETH<br/>BITTREX</div>
+              <div class="list-item-currency downgrade">
+                <span>{{bittrexETHLastPrice}}<span class="arrow-down">↘</span></span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="text-center" >
+              <div class="list-item-currency">BTC<br/>POLONIEX</div>
+              <div class="list-item-currency upgrade">
+                <span>{{polonixBtcPrice}}<span class="arrow-up">↗</span></span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="text-center">
+              <div class="list-item-currency">ETH<br/>POLONIEX</div>
+              <div class="list-item-currency downgrade">
+                <span>{{polonixEthPrice}} <span class="arrow-down">↘</span></span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="text-center" >
+              <div class="list-item-currency">BTC<br/>COINBASE PRIME</div>
+              <div class="list-item-currency upgrade">
+                <span>{{coinBasePrimeBTCPrice}} <span class="arrow-up">↗</span></span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="text-center">
+              <div class="list-item-currency">ETH<br/>COINBASE PRIME</div>
+              <div class="list-item-currency downgrade">
+                <span>{{coinBasePrimeETHPrice}}<span class="arrow-down">↘</span></span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="text-center" >
+              <div class="list-item-currency">BTC<br/>COINBASE PRO</div>
+              <div class="list-item-currency upgrade">
+                <span>{{coinBaseProBTCPrice}}<span class="arrow-up">↗</span></span>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="text-center">
+              <div class="list-item-currency">ETH<br/>COINBASE PRO</div>
+              <div class="list-item-currency downgrade">
+                <span>{{coinBaseProETHPrice}}<span class="arrow-down">↘</span></span>
+              </div>
+            </div>
+          </li>            
+          <!-- <li class="list-item">
+              <div class="text-center" >
+                <div class="list-item-currency">BTC<br/>BINANCE</div>
+                <div class="list-item-currency upgrade">
+                  <span>1,244.26331 <span class="arrow-up">↗</span></span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="text-center">
+                <div class="list-item-currency">ETH<br/>BINANCE</div>
+                <div class="list-item-currency downgrade">
+                  <span>7,088.48 <span class="arrow-down">↘</span></span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="text-center" >
+                <div class="list-item-currency">BTC<br/>BINANCE</div>
+                <div class="list-item-currency upgrade">
+                  <span>1,244.26331 <span class="arrow-up">↗</span></span>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="text-center">
+                <div class="list-item-currency">ETH<br/>BINANCE</div>
+                <div class="list-item-currency downgrade">
+                  <span>7,088.48 <span class="arrow-down">↘</span></span>
+                </div>
+              </div>
+            </li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END COIN PRICE -->
+
+<!-- START ABOUT -->
+<section id="about" class="about-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="about-img-top text-center">
+          <img class="img-responsive" src="assets/img/about/about-1.png" alt="image" />
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text-title">
+          <h2>What is our mission?</h2>
+          <p>Coinget is a free resource which provides fast and reliable data APIs to cryptocurrency markets! We support following Exchanges:</p>
+        </div>
+        <ul class="about-text-list">
+          <li>
+            <span class="fa fa-check"></span>
+            Bittrex
+          </li>
+          <li>
+            <span class="fa fa-check"></span>
+            Binance
+          </li>
+          <li>
+            <span class="fa fa-check"></span>
+            Poloniex
+          </li>
+          <li>
+            <span class="fa fa-check"></span>
+            Coinbase
+          </li>
+          <li>
+            <span class="fa fa-check"></span>
+            Coinbase Pro (Ex GDAX)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END ABOUT -->
+
+
+
+<!-- START OUR WORK -->
+<section class="our-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center wow zoomIn">
+          <h2>How It Works</h2>
+          <div class="line"></div>
+          <p style="padding: 0 0%;">Easily select Exchange, coin pair and date from our search section or retrieve data via REST API.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="workBox">
+          <div class="work-icon">
+            <i class="fa fa-history"></i>
+          </div>
+          <!-- <h3 class="title">Create your wallet</h3> -->
+          <p class="description" style="padding: 0;">
+            Instant search of historical data from major exchanges
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="workBox">
+          <div class="work-icon">
+            <i class="fa fa-btc"></i>
+          </div>
+          <!-- <h3 class="title">Make payments</h3> -->
+          <p class="description" style="padding: 0;">
+            RESTful API for fast access in JSON format
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="workBox">
+          <div class="work-icon">
+            <i class="fa fa-send"></i>
+          </div>
+          <!-- <h3 class="title">Buy or Sell Orders</h3> -->
+          <p class="description" style="padding: 0;">
+            Huge selection of exchanges and coin pairs
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="workBox">
+          <div class="work-icon">
+            <i class="fa fa-users"></i>
+          </div>
+          <!-- <h3 class="title">Buy or Sell Orders</h3> -->
+          <p class="description" style="padding: 0;">
+            User friendly free resource for crypto community
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END OUR WORK -->
+
+
+<!-- START AMAZING FEATURES -->
+<section class="amazing_feature">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center wow zoomIn">
+          <h2>Why Choose coinGET</h2>
+          <div class="line"></div>
+          <p>We record coin prices every second and proive free access to support your business.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="serviceBox">
+          <div class="service-icon">
+            <i class="fa fa-globe"></i>
+            <h3 class="title">Coins supported</h3>
+          </div>
+          <p class="description">
+            At this point we support Bitcoin and Etherium coins and will add more in the future.
+          </p>
+        </div>
+      </div><!-- END COL-->
+      <div class="col-md-4 col-sm-6">
+        <div class="serviceBox">
+          <div class="service-icon">
+            <i class="fa fa-retweet"></i>
+            <h3 class="title">Multiple Exchanges</h3>
+          </div>
+          <p class="description">
+            We have major exchanged data to calculate profit and show all history of investment.
+          </p>
+        </div>
+      </div><!-- END COL-->
+      <div class="col-md-4 col-sm-6">
+        <div class="serviceBox">
+          <div class="service-icon">
+            <i class="fa fa-bar-chart"></i>
+            <h3 class="title">Access Methods</h3>
+          </div>
+          <p class="description">
+            Multiple ways to access data. Manual selection from our Search section and by REST API that we provide for your convenience.
+          </p>
+        </div>
+      </div><!-- END COL-->
+      <div class="col-md-4 col-sm-6">
+        <div class="serviceBox">
+          <div class="service-icon">
+            <i class="fa fa-lock"></i>
+            <h3 class="title">Safe and Secure</h3>
+          </div>
+          <p class="description">
+            We have security measures in place to provide you with better service.
+          </p>
+        </div>
+      </div><!-- END COL-->
+      <div class="col-md-4 col-sm-6">
+        <div class="serviceBox">
+          <div class="service-icon">
+            <i class="fa fa-btc"></i>
+            <h3 class="title">Fast results</h3>
+          </div>
+          <p class="description">
+            We invested in technology to provide fast and frequent data with interval of 1 second for each exchange.
+          </p>
+        </div>
+      </div><!-- END COL-->
+      <div class="col-md-4 col-sm-6">
+        <div class="serviceBox">
+          <div class="service-icon">
+            <i class="fa fa-line-chart"></i>
+            <h3 class="title">Instant support</h3>
+          </div>
+          <p class="description">
+            Please contact us for instant support from our trained technicians.
+          </p>
+        </div>
+      </div><!-- END COL-->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</section>
+<!-- END AMAZING FEATURES -->
+
+
+
+<!-- START SERVICES  -->
+<section id="services" class="services-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center wow zoomIn">
+          <h2>Rest API</h2>
+          <div class="line"></div>
+          <p>We will provide access to a database of historical market data. <br>The CoinGet database currently holds more than 10 TB of raw and preprocessed market data abailable through the RESTful protocol</p>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="s-slider">
+          <div class="item">
+            <div class="our-services">
+              <img src="assets/img/services/img-1.jpg" alt="">
+              <div class="services-content">
+                <h3 class="services-prof">
+                  Cryptocurrency Investment
+                  <small>Invest to secure your future.</small>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="our-services">
+              <img src="assets/img/services/img-2.jpg" alt="">
+              <div class="services-content">
+                <h3 class="services-prof">
+                  Cryptocurrency Investment
+                  <small>Invest to secure your future.</small>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="our-services">
+              <img src="assets/img/services/img-3.jpg" alt="">
+              <div class="services-content">
+                <h3 class="services-prof">
+                  Cryptocurrency Investment
+                  <small>Invest to secure your future.</small>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="our-services">
+              <img src="assets/img/services/img-4.jpg" alt="">
+              <div class="services-content">
+                <h3 class="services-prof">
+                  Cryptocurrency Investment
+                  <small>Invest to secure your future.</small>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="our-services">
+              <img src="assets/img/services/img-5.jpg" alt="">
+              <div class="services-content">
+                <h3 class="services-prof">
+                  Cryptocurrency Investment
+                  <small>Invest to secure your future.</small>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="our-services">
+              <img src="assets/img/services/img-6.jpg" alt="">
+              <div class="services-content">
+                <h3 class="services-prof">
+                  Cryptocurrency Investment
+                  <small>Invest to secure your future.</small>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="our-services">
+              <img src="assets/img/services/img-7.jpg" alt="">
+              <div class="services-content">
+                <h3 class="services-prof">
+                  Cryptocurrency Investment
+                  <small>Invest to secure your future.</small>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="our-services">
+              <img src="assets/img/services/img-8.jpg" alt="">
+              <div class="services-content">
+                <h3 class="services-prof">
+                  Cryptocurrency Investment
+                  <small>Invest to secure your future.</small>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--- END COL -->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</section>
+<!-- END SERVICES -->
+
+
+<!-- START OUR VIDEO  -->
+<div class="own-video text-center" style="background-image: url(../assets/img/bg/video-bg.jpg); background-size:cover; background-position: center center; background-attachment: fixed;">
+  <h3>Please follow API format</h3>
+  <!--<a class="video-play" href=""><img src="assets/img/play-button.png" alt="" /></a>-->
+  <p>http://www.coinget.io/api/search?exchange= < Exchange Name >&coinName=< Coin Name >&eventTime= < Time in linux format >
+  it is simple to use our api just replace parameters value with real value and start collect data.
+  </p>
+  <h4 style="color:white;">Example:</h4>
+  <a style="color:white; width: 40%;"  href="http://64.62.164.141:8080/api/search?exchange=binance&coinName=btcUsdt&timeInSeconds=1539792901000">
+    <p class="text-center">http://www.coinget.io/api/search?exchange=binance&coinName=btcUsdt
+      &timeInSeconds=1539792901000</p>
+  </a>
+  
+
+</div>
+<!-- END OUR VIDEO  -->
+
+
+<!-- START FEATURE -->
+<section id="feature" class="feature-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title text-center wow zoomIn">
+          <h2>Why Choose Us</h2>
+          <div class="line"></div>
+          <p>Completely comprehensive and free service.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-4 col-sm-6">
+        <div class="featureBox">
+          <img src="assets/img/feature/feature-1.jpg" alt="image" >
+          <div class="featureBox-content">
+								<span class="featureBox-icon">
+									<i class="fa fa-user-circle-o"></i>
+								</span>
+            <h3 class="title">Unlimited access</h3>
+            <p class="description">
+              No restriction to access data
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="featureBox">
+          <img src="assets/img/feature/feature-2.jpg" alt="image" >
+          <div class="featureBox-content">
+								<span class="featureBox-icon">
+									<i class="fa fa-money"></i>
+								</span>
+            <h3 class="title">Free service</h3>
+            <p class="description">
+              There is no fee for aceess to our data
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="featureBox">
+          <img src="assets/img/feature/feature-3.jpg" alt="image" >
+          <div class="featureBox-content">
+								<span class="featureBox-icon">
+									<i class="fa fa-btc"></i>
+								</span>
+            <h3 class="title">Fast transaction</h3>
+            <p class="description">
+              Instant responce to your request
+            </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- END ROW-->
+  </div><!-- END CONTAINER-->
+</section>
+<!-- END FEATURE -->
+
+<!-- START CUNTING -->
+<section class="cunting " style="background-image: url(../assets/img/bg/cunting-img.jpg); background-size:cover; background-position: center center; background-attachment: fixed;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="cunting_content text-center">
+          <h4><i class="cunting-margin fa fa-download"></i><strong>10G</strong></h4>
+          <p>Data Recorded</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="cunting_content text-center">
+          <h4><i class="cunting-margin fa fa-users"></i><strong>5</strong></h4>
+          <p>Exchanges</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="cunting_content text-center">
+          <h4><i class="cunting-margin fa fa-pie-chart"></i><strong>1 Sec</strong></h4>
+          <p>Time Interval</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="cunting_content text-center">
+          <h4><i class="cunting-margin fa fa-rocket"></i><strong>150K</strong></h4>
+          <p>Subscribers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END CUNTING -->
+
+
+<!-- START FEATURE TWO -->
+<section class="feature-two section-padding ">
+  <div class="container">
+    <div class="row">
+      <div class="no-padding col-xs-12 col-sm-6">
+        <div class="single_feature_two">
+          <h1>We are open to new Ideas</h1>
+          <h4>Please help us to better serve you by sending us your request for improvment and new ideas.</h4>
+          <p> We are free resource and welcome anyone who supports cryptocurrency community. Let's make it grow!</p>
+          <a class="btn btn-lg " href="#contact">Email US</a>
+        </div>
+      </div><!-- END COL-->
+      <div class="text-center col-xs-12 col-sm-6">
+        <div class="single_feature_two_img">
+          <img class="center-black img-responsive wow bounceIn" data-wow-delay=".6s" src="assets/img/feature-two/desktop.png" alt="image">
+        </div>
+      </div><!-- END COL-->
+    </div><!-- END ROW-->
+  </div><!-- END CONTAINER-->
+</section>
+<!-- END FEATURED TWO -->
+
+<!-- START CONTACT FORM-->
+<section id="contact" class="contact_area" style="background-image: url(../assets/img/bg/contact-bg.jpg); background-size:cover; background-position:center center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title contact-title text-center wow zoomIn">
+          <h2>Contact us</h2>
+          <div class="line"></div>
+          <p>If you have any question, get in touch here.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="contact">
+          <form class="form" name="enq" method="post" action="contact.php" onsubmit="return validation();">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="first-name" placeholder="Name" required="required">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
+              </div>
+              <div class="form-group col-md-12">
+                <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required="required">
+              </div>
+              <div class="form-group col-md-12">
+                <textarea rows="6" name="message" class="form-control" id="description" placeholder="Your Message" required="required"></textarea>
+              </div>
+              <div class="col-md-12">
+                <div class="actions">
+                  <input type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div><!--- END COL -->
+      <div class="col-xs-12 col-sm-4">
+        <div class="contact_address">
+          <div class="single-address">
+            <i class="fa fa-rocket"></i>
+            <h4>Our Location</h4>
+            <p>CoinGet 340 6th Street, Suite 301<br>San Francisco <br> CA 94103</p>
+          </div>
+          <div class="single-address wow fadeInLeft">
+            <i class="fa fa-phone"></i>
+            <h4>Call us on</h4>
+            <p>(+1) 415 310 2296</p>
+          </div>
+          <div class="single-address wow fadeInLeft">
+            <i class="fa fa-envelope"></i>
+            <h4>Send your message</h4>
+            <p>support@coinget.io</p>
+          </div>
+        </div>
+      </div><!-- END COL -->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</section>
+<!-- END CONTACT FORM -->
+
+<!-- START FOOTER TOP -->
+<footer class="footer_top section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class="footer_top_about">
+          <img src="assets/img/logo.png" alt="images" />
+          <p>Dedicated to support crypto community </p>
+        </div>
+      </div><!-- END COL -->
+      <!--	<div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="footer_top_link">
+                            <h3 class="footer_title">Latest News</h3>
+                            <div class="footer_news">
+                                <div class="footer_news_content">
+                                    <div class="footer_news_img">
+                                        <a href="#"><img class="img-responsive" src="assets/img/footer/img-1.jpg" alt="images"/></a>
+                                    </div>
+                                    <div class="footer_news_text">
+                                        <a href="#">
+                                            <h4>Marketing and Sales Target</h4>
+                                            <span>January 18,2018</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer_news">
+                                <div class="footer_news_content">
+                                    <div class="footer_news_img">
+                                        <a href="#"><img class="img-responsive" src="assets/img/footer/img-2.jpg" alt="images"/></a>
+                                    </div>
+                                    <div class="footer_news_text">
+                                        <a href="#">
+                                            <h4>Marketing and Sales Target</h4>
+                                            <span>January 18,2018</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer_news">
+                                <div class="footer_news_content footer_news_bottom">
+                                    <div class="footer_news_img">
+                                        <a href="#"><img class="img-responsive" src="assets/img/footer/img-3.jpg" alt="images"/></a>
+                                    </div>
+                                    <div class="footer_news_text">
+                                        <a href="#">
+                                            <h4>Marketing and Sales Target</h4>
+                                            <span>January 18,2018</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>--><!-- END COL -->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="footer_top_contact">
+          <h3 class="footer_title">Contact Us</h3>
+          <h5><i class="fa fa-map-marker"></i>340 6th Street, Suite 301, San Francisco CA 94103</h5>
+          <h5><i class="fa fa-phone"></i>(+1)415 310 2296</h5>
+          <h5><i class="fa fa-envelope"></i>support@coinget.io</h5>
+          <h5><i class="fa fa-globe"></i>www.coinget.io</h5>
+          <div class="footer_subscribe">
+            <form action="#" class="subscribe">
+              <input type="text" class="subscribe__input" placeholder="Enter your Email">
+              <button type="button" class="subscribe__btn"><i class="fa fa-paper-plane-o"></i></button>
+            </form>
+          </div>
+        </div>
+      </div><!-- END COL -->
+    </div><!-- END EOW -->
+  </div><!-- END CONTAINER -->
+</footer>
+<!-- END FOOTER TOP -->
+
+<!-- START FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="wow zoomIn col-xs-12">
+        <div class="footer_social">
+          <ul>
+            <li><a class="f_facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="f_twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="f_google" href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a class="f_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="f_youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a class="f_skype" href="#"><i class="fa fa-skype"></i></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Copyright &copy; 2018 | CoinGet</p>
+        </div><!--- END FOOTER COPYRIGHT -->
+      </div><!--- END COL -->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+</div>
+

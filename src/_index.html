@@ -1,0 +1,1133 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CoinGet</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+  
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<!-- SITE TITLE -->
+		<title>CoinGet</title>			
+		<!-- Latest Bootstrap min CSS -->
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet"> 
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+		<!--- owl carousel Css-->
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
+		<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">	
+		<!-- MAGNIFIC CSS -->
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<!-- component CSS -->	
+		<link rel="stylesheet" href="assets/css/component.css">			
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="assets/css/popup.css">		
+		<script type="text/javascript" src="assets/js/angular-material-datetimepicker.js"></script>
+		<script type="text/javascript" src="assets/js/demo.js"></script>
+		<link rel="stylesheet" href="assets/css/material-datetimepicker.css" type="text/css"/>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+    <body data-spy="scroll" data-offset="80">
+
+		<!-- START PRELOADER -->
+		<div class="preloader">
+			 <div class="loader">
+                <div class="loading-1"></div>
+                <div class="loading-2">Loading...</div>
+            </div>
+		</div>
+		<!-- END PRELOADER -->
+		
+		<!-- START HEADER -->
+		<header class="header_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<div class="top-info-left">
+							<a href=""><i class="fa fa-envelope"></i>support@coinget.com</a>
+							<a href=""><i class="fa fa-phone"></i>+(01) 01 123 123 123</a>
+						</div>
+					</div><!--- END COL -->						
+					<div class="col-xs-12 col-sm-6">
+						<div class="top-info-right">
+							<ul class="list-unstyled">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul>
+						</div>
+					</div><!--- END COL -->									  
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+		</header>
+		<!-- START HEADER -->
+		
+		<!-- START NAVBAR -->
+		<div id="sticker" class="navbar navbar-default menu-top">
+				<a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"></a>
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="logo"></a> -->
+				</div>
+				<div class="navbar-collapse collapse">
+					<nav>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="page-scroll" href="#home">Product</a></li>
+							<!-- <li><a class="page-scroll" href="#home">Home</a></li> -->
+							<li><a class="page-scroll" href="#about">About</a></li>						
+							<li><a class="page-scroll" href="#services">API</a></li>	
+							<!-- <li><a class="page-scroll" href="#team">Team</a></li>						
+							<li><a class="page-scroll" href="#news">News</a></li>						 -->
+							<li><a class="page-scroll" href="#contact">Contact</a></li>
+							
+							<li><a id="modal_trigger" href="#modal" class="btn-default btn_signin">Sign in</a>
+								<div id="modal" class="popupContainer" style="display:none;">
+									<header class="popupHeader">
+										<span class="header_title">Login</span>
+										<span class="modal_close"><i class="fa fa-times"></i></span>
+									</header>
+									
+									<div class="popupBody">
+										<!-- Social Login -->
+										<div class="social_login">
+											<div class="">
+												<a href="#" class="social_box fb">
+													<span class="icon"><i class="fa fa-facebook"></i></span>
+													<span class="icon_title">Connect with Facebook</span>
+													
+												</a>
+
+												<a href="#" class="social_box google">
+													<span class="icon"><i class="fa fa-google-plus"></i></span>
+													<span class="icon_title">Connect with Google</span>
+												</a>
+											</div>
+
+											<div class="centeredText">
+												<span>Or use your Email address</span>
+											</div>
+
+											<div class="action_btns">
+												<div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+												<div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+											</div>
+										</div>
+
+										<!-- Username & Password Login form -->
+										<div class="user_login">
+											<form>
+												<label>Email / Username</label>
+												<input type="text" style="margin-bottom:0px" />
+												<br />
+
+												<label>Password</label>
+												<input type="password" style="margin-bottom:0px"/>
+												<br />
+
+											
+												<div class="action_btns">
+													<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+													<div class="one_half last"><a href="#" class="btn btn_red" style="color:#fff">Login</a></div>
+												</div>
+											</form>
+
+											<a href="#" class="forgot_password">Forgot password?</a>
+										</div>
+
+										<!-- Register Form -->
+										<div class="user_register">
+											<form>
+												<label>Full Name</label>
+												<input type="text" style="margin-bottom:0px" />
+												<br />
+
+												<label>Email Address</label>
+												<input type="email" style="margin-bottom:0px"/>
+												<br />
+
+												<label>Password</label>
+												<input type="password" style="margin-bottom:0px" />
+												<br />
+
+												<div class="action_btns">
+													<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+													<div class="one_half last"><a href="#" class="btn btn_red" style="color:#fff">Register</a></div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div><!--- END LOGIN & SIGNUP -->										
+							</li><!--- END MENU -->							
+						</ul>
+					</nav>
+				</div> 
+			</div><!--- END CONTAINER -->
+		</div>  
+		<!-- END NAVBAR -->	
+		
+		<!-- START LOGIN REGISTER -->
+		<section class="login_register">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-3 col-xs-12 col-md-6">
+						<!--  START LOGIN FORM -->
+						<div class="modal fade" id="signin">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="login_register_title">Already a member Sign in</h4>
+									</div>
+									<div class="modal-body">
+										<div class="login">
+											<div class="form-group">
+												<input type="text" class=" form-control requiredField input-label" placeholder="Username" name="name">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control requiredField input-label" placeholder="Enter Password" name="password" >
+											</div>
+											<div class="form-group">
+												<button class="sign-btn" type="submit" name="submit">login</button>
+											</div>
+											
+											<a href="#signup" data-toggle="modal" data-target="#signup" class="modal_link modal-btn">Sign Up</a>
+										</div>
+								  </div>
+								</div><!-- END CONTENT -->
+							</div><!-- END MODEL DIALOG -->
+						</div><!--END LOGIN FORM  -->
+						
+						<!--  START SIGNUP FORM -->
+						<div class="modal fade" id="signup">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="login_register_title">Sign Up here</h4>
+									</div>
+									<div class="modal-body">
+										<div class="login">
+											<div class="form-group">
+												<input type="text" class=" form-control requiredField input-label" placeholder="Username" name="name">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control requiredField input-label" placeholder="Email" name="name">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control requiredField input-label" placeholder="Enter Password" name="password" >
+											</div>
+											<div class="form-group">
+												<button class="sign-btn" type="submit" name="submit">Sign Up</button>
+											</div>
+											
+											<a href="#signin" data-target="#signin" class="modal_link modal-btn">Sign In</a>
+										</div>
+								  </div>
+								</div><!-- END CONTENT -->
+							</div><!-- END MODEL DIALOG -->
+						</div><!--END SIGNUP FORM  -->
+					</div>
+				</div>
+			</div>
+		</section>		
+		<!-- END LOGIN REGISTER -->
+		
+		<!-- START  HOME -->
+		<section data-stellar-background-ratio="0.3" id="home" class="home_bg" style="background-image: url(assets/img/bg/btc-home-bg.jpg);  background-size:cover; background-position: center center">
+			<div class="container">
+				<div class="row">
+				 	<div class="col-md-offset-1 col-xs-12 col-md-10">
+						<div class="hero-text text-center">
+							<!-- <h2>Biggest Currency Innovation That the World Has Seen. </h2> -->
+							<h2>Crypto Time Machine </h2>
+							<h4> Select exchange, coin pair and point in time to see history price </h4>
+						</div> 
+						
+					</div><!--- END COL -->
+				</div>
+				<div class="row top-buffer">
+					<div class="col-md-offset-1 col-xs-12 col-md-10">
+						<div class="mat-app-background col-xs-12 col-md-12" style="color: rgba(255,255,255,.87);">
+							<app-root>Loading...</app-root>
+						</div>
+					</div>
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+		</section>
+		<!-- END  HOME -->
+		
+		<!-- START EXCHANGER -->
+		<section class="exchanger">
+      <div class="container">
+        <!-- <div class="mat-app-background basic-container">
+          <select-form-example>Loading...</select-form-example>
+        </div> -->
+       
+      </div>
+			<!-- <div class="container">
+				<div class="row">
+					<div class="text-center col-xs-12 col-md-2">
+						<div class="exchange_text exchange_title">
+							<h1>Bitcoin</h1>
+							<p>exchange rate</p>
+						</div>
+					</div>
+
+				</div>
+			</div> -->
+			
+		</section>
+		<!-- END EXCHANGER -->
+		
+		<!-- START ABOUT -->
+		<section id="about" class="about-area section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<div class="about-img-top text-center">
+								<img class="img-responsive" src="assets/img/about/about-1.png" alt="image" />
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<div class="about-text-title">
+							<h2>What is our mission?</h2>
+							<p>Coinget is a free resource which provides fast and reliable data APIs to cryptocurrency markets!</p>
+						</div>
+						<ul class="about-text-list">
+							<li>
+								<span class="fa fa-check"></span>
+								Lorem ipsum dolor sit ame tconsectetur adipisicing elit 
+							</li>
+							<li>
+								<span class="fa fa-check"></span>
+								 ipsum dolor sit ame tconsectetur adipisicing elit 
+							</li>
+							<li>
+								<span class="fa fa-check"></span>
+								 dolor sit ame tconsectetur adipisicing elit 
+							</li>
+							<li>
+								<span class="fa fa-check"></span>
+								Lorem ipsum dolor sit  tconsectetur adipisicing elit 
+							</li>
+							<li>
+								<span class="fa fa-check"></span>
+								Lorem ipsum dolor sit ame tconsectetur adipisicing elit 
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END ABOUT -->
+
+
+<!-- <i class="fas fa-users"></i> -->
+
+
+		<!-- START OUR WORK -->
+		<section class="our-work">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center wow zoomIn">
+							<h2>How It Work</h2>
+							<div class="line"></div>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="workBox">
+							<div class="work-icon">
+								<i class="fa fa-history"></i>
+							</div>
+							<!-- <h3 class="title">Create your wallet</h3> -->
+							<p class="description">
+								Instant search of historical data from old exchanges
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="workBox">
+							<div class="work-icon">
+								<i class="fa fa-btc"></i>
+							</div>
+							<!-- <h3 class="title">Make payments</h3> -->
+							<p class="description">
+								RESTful API for fast access in JSON format
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="workBox">
+							<div class="work-icon">
+								<i class="fa fa-send"></i>
+							</div>
+							<!-- <h3 class="title">Buy or Sell Orders</h3> -->
+							<p class="description">
+								Huge selection of exchanges and coin pairs
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="workBox">
+							<div class="work-icon">
+								<i class="fa fa-users"></i>
+							</div>
+							<!-- <h3 class="title">Buy or Sell Orders</h3> -->
+							<p class="description">
+								User friendly free resource for crypto community
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OUR WORK -->	
+		
+		<!-- START FEATURE TWO -->
+		<section class="feature-two section-padding ">
+			<div class="container">
+				<div class="row">
+					<div class="no-padding col-xs-12 col-sm-6">
+						<div class="single_feature_two">
+							<h1>Buy and Sell Bitcoin</h1>
+							<h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</h4>
+							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam earum, provident ad, porro aperiam dolore, blanditiis, nihil pariatur eius adipisci consequuntur officiis. Excepturi, nostrum? Id incidunt nesciunt officia hic distinctio nihil pariatur. 
+							</p>
+							<a class="btn btn-lg " href="#">JOIN NOW</a>
+						</div>
+					</div><!-- END COL-->
+					<div class="text-center col-xs-12 col-sm-6">
+						<div class="single_feature_two_img">
+							<img class="center-black img-responsive wow bounceIn" data-wow-delay=".6s" src="assets/img/feature-two/desktop.png" alt="image">
+						</div>
+					</div><!-- END COL-->
+				</div><!-- END ROW-->
+			</div><!-- END CONTAINER-->
+		</section>
+		<!-- END FEATURED TWO -->
+		
+		<!-- START AMAZING FEATURES -->
+		<section class="amazing_feature">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center wow zoomIn">
+							<h2>Why Choose Our Currency</h2>
+							<div class="line"></div>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>						
+						</div>
+					</div>						
+					<div class="col-md-4 col-sm-6">
+						 <div class="serviceBox">
+							<div class="service-icon">
+								<i class="fa fa-globe"></i>
+								<h3 class="title">Bitcoin Transaction</h3>
+							</div>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis dolorem et fugit hic iusto maxime numquam officia.
+							</p>
+						</div>
+					</div><!-- END COL-->						
+					<div class="col-md-4 col-sm-6">
+						 <div class="serviceBox">
+							<div class="service-icon">
+								<i class="fa fa-retweet"></i>
+								<h3 class="title">Instant Exchange</h3>
+							</div>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis dolorem et fugit hic iusto maxime numquam officia.
+							</p>
+						</div>
+					</div><!-- END COL-->						
+					<div class="col-md-4 col-sm-6">
+						 <div class="serviceBox">
+							<div class="service-icon">
+								<i class="fa fa-bar-chart"></i>
+								<h3 class="title">Investment Banking</h3>
+							</div>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis dolorem et fugit hic iusto maxime numquam officia.
+							</p>
+						</div>
+					</div><!-- END COL-->						
+					<div class="col-md-4 col-sm-6">
+						 <div class="serviceBox">
+							<div class="service-icon">
+								<i class="fa fa-lock"></i>
+								<h3 class="title">Safe and Secure</h3>
+							</div>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis dolorem et fugit hic iusto maxime numquam officia.
+							</p>
+						</div>
+					</div><!-- END COL-->						
+					<div class="col-md-4 col-sm-6">
+						 <div class="serviceBox">
+							<div class="service-icon">
+								<i class="fa fa-btc"></i>
+								<h3 class="title">Investment Planning</h3>
+							</div>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis dolorem et fugit hic iusto maxime numquam officia.
+							</p>
+						</div>
+					</div><!-- END COL-->						
+					<div class="col-md-4 col-sm-6">
+						 <div class="serviceBox">
+							<div class="service-icon">
+								<i class="fa fa-line-chart"></i>
+								<h3 class="title">Instant Trading</h3>
+							</div>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cumque, cupiditate debitis dolorem et fugit hic iusto maxime numquam officia.
+							</p>
+						</div>
+					</div><!-- END COL-->						
+				</div><!--- END ROW -->			
+			</div><!--- END CONTAINER -->		
+		</section>
+		<!-- END AMAZING FEATURES -->
+		
+		<!-- START SERVICES  -->
+		<section id="services" class="services-area section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center wow zoomIn">
+							<h2>Rest API</h2>
+							<div class="line"></div>
+							<p>We will provide access to a database of historical market data. <br>The CoinGet database currently holds more than 10 TB of raw and preprocessed market data abailable through the RESTful protocol</p>
+						</div>
+					</div>				
+					<div class="col-md-12">
+						<div class="s-slider">
+							<div class="item">
+								<div class="our-services">
+									<img src="assets/img/services/img-1.jpg" alt="">
+									<div class="services-content">
+										<h3 class="services-prof">
+											Bitcoin Investment
+											<small>Lorem ipsum dolor sit amet, consectetur elit. Accusantium cupiditate delectus.</small>
+										</h3>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="our-services">
+									<img src="assets/img/services/img-2.jpg" alt="">
+									<div class="services-content">
+										<h3 class="services-prof">
+											Bitcoin Investment
+											<small>Lorem ipsum dolor sit amet, consectetur elit. Accusantium cupiditate delectus.</small>
+										</h3>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="our-services">
+									<img src="assets/img/services/img-3.jpg" alt="">
+									<div class="services-content">
+										<h3 class="services-prof">
+											Bitcoin Investment
+											<small>Lorem ipsum dolor sit amet, consectetur elit. Accusantium cupiditate delectus.</small>
+										</h3>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="our-services">
+									<img src="assets/img/services/img-4.jpg" alt="">
+									<div class="services-content">
+										<h3 class="services-prof">
+											Bitcoin Investment
+											<small>Lorem ipsum dolor sit amet, consectetur elit. Accusantium cupiditate delectus.</small>
+										</h3>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="our-services">
+									<img src="assets/img/services/img-5.jpg" alt="">
+									<div class="services-content">
+										<h3 class="services-prof">
+											Bitcoin Investment
+											<small>Lorem ipsum dolor sit amet, consectetur elit. Accusantium cupiditate delectus.</small>
+										</h3>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="our-services">
+									<img src="assets/img/services/img-6.jpg" alt="">
+									<div class="services-content">
+										<h3 class="services-prof">
+											Bitcoin Investment
+											<small>Lorem ipsum dolor sit amet, consectetur elit. Accusantium cupiditate delectus.</small>
+										</h3>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="our-services">
+									<img src="assets/img/services/img-7.jpg" alt="">
+									<div class="services-content">
+										<h3 class="services-prof">
+											Bitcoin Investment
+											<small>Lorem ipsum dolor sit amet, consectetur elit. Accusantium cupiditate delectus.</small>
+										</h3>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="our-services">
+									<img src="assets/img/services/img-8.jpg" alt="">
+									<div class="services-content">
+										<h3 class="services-prof">
+											Bitcoin Investment
+											<small>Lorem ipsum dolor sit amet, consectetur elit. Accusantium cupiditate delectus.</small>
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!--- END COL -->
+				</div><!--- END ROW -->			
+			</div><!--- END CONTAINER -->	
+		</section>
+		<!-- END SERVICES -->
+		
+		<!-- START OUR VIDEO  -->
+		<div class="own-video text-center" style="background-image: url(assets/img/bg/video-bg.jpg); background-size:cover; background-position: center center; background-attachment: fixed;">
+			<h3>Please follow API format</h3>
+			<a class="video-play" href="https://www.youtube.com/watch?v=v5eAbbkaAfU"><img src="assets/img/play-button.png" alt="" /></a>
+			<p>http://www.coinget.com/api/search?exchange= < Exchange Name >&coinName=</ Coin Name >&eventTime= < Time in linux format > 
+				it is simple to use our api just replace paramters value with real value and start collect data.
+			</p>
+			<h4 style="color:white;">Example:</h4>
+			<a style="color:white;" class="example" href="http://64.62.164.141:8080/api/search?exchange=binance&amp;coinName=btcUsdt&amp;eventTime=1532492079486"> http://www.coinget.com/api/search?exchange=binance&coinName=btcUsdt&eventTime=1532492079486</a>
+			
+		</div>
+		<!-- END OUR VIDEO  -->
+		
+		<!-- START OUR TEAM -->
+		<!-- <section id="team" class="team-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center wow zoomIn">
+							<h2>Our Team</h2>
+							<div class="line"></div>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="our-team">
+							<div class="pic">
+								<img src="assets/img/team/team-1.jpg" alt="image" >
+							</div>
+							<div class="team-content">
+								<h3 class="title">Mamun</h3>
+								<span class="post">Bitcoin Consultant</span>
+							</div>
+							<ul class="social">
+								<li><a href="#" class="fa fa-facebook"></a></li>
+								<li><a href="#" class="fa fa-google-plus"></a></li>
+								<li><a href="#" class="fa fa-instagram"></a></li>
+								<li><a href="#" class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="our-team">
+							<div class="pic">
+								<img src="assets/img/team/team-2.jpg" alt="image" >
+							</div>
+							<div class="team-content">
+								<h3 class="title">Sabbir</h3>
+								<span class="post">Bitcoin Consultant</span>
+							</div>
+							<ul class="social">
+								<li><a href="#" class="fa fa-facebook"></a></li>
+								<li><a href="#" class="fa fa-google-plus"></a></li>
+								<li><a href="#" class="fa fa-instagram"></a></li>
+								<li><a href="#" class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="our-team">
+							<div class="pic">
+								<img src="assets/img/team/team-3.jpg" alt="image" >
+							</div>
+							<div class="team-content">
+								<h3 class="title">Najmul</h3>
+								<span class="post">Bitcoin Consultant</span>
+							</div>
+							<ul class="social">
+								<li><a href="#" class="fa fa-facebook"></a></li>
+								<li><a href="#" class="fa fa-google-plus"></a></li>
+								<li><a href="#" class="fa fa-instagram"></a></li>
+								<li><a href="#" class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="our-team">
+							<div class="pic">
+								<img src="assets/img/team/team-4.jpg" alt="image" >
+							</div>
+							<div class="team-content">
+								<h3 class="title">Shultana</h3>
+								<span class="post">Bitcoin Consultant</span>
+							</div>
+							<ul class="social">
+								<li><a href="#" class="fa fa-facebook"></a></li>
+								<li><a href="#" class="fa fa-google-plus"></a></li>
+								<li><a href="#" class="fa fa-instagram"></a></li>
+								<li><a href="#" class="fa fa-linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>  -->
+		<!-- END OUR TEAM -->
+		
+		<!-- START FEATURE -->
+		<section id="feature" class="feature-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center wow zoomIn">
+							<h2>Why Choose Bitcoin</h2>
+							<div class="line"></div>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>						
+						</div>
+					</div>
+				</div>
+				<div class="row ">
+					<div class="col-md-4 col-sm-6">
+						<div class="featureBox">
+							<img src="assets/img/feature/feature-1.jpg" alt="image" >
+							<div class="featureBox-content">
+								<span class="featureBox-icon">
+									<i class="fa fa-user-circle-o"></i>
+								</span>
+								<h3 class="title">Verify Account</h3>
+								<p class="description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci id molestiae  Assumenda laborum officia rem
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="featureBox">
+							<img src="assets/img/feature/feature-2.jpg" alt="image" >
+							<div class="featureBox-content">
+								<span class="featureBox-icon">
+									<i class="fa fa-money"></i>
+								</span>
+								<h3 class="title">Payment Anywhere</h3>
+								<p class="description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci id molestiae  Assumenda laborum officia rem
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="featureBox">
+							<img src="assets/img/feature/feature-3.jpg" alt="image" >
+							<div class="featureBox-content">
+								<span class="featureBox-icon">
+									<i class="fa fa-btc"></i>
+								</span>
+								<h3 class="title">Safely Transaction</h3>
+								<p class="description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci id molestiae  Assumenda laborum officia rem
+								</p>
+							</div>
+						</div>
+					</div>
+				</div><!-- END ROW-->
+			</div><!-- END CONTAINER-->
+		</section>
+		<!-- END FEATURE -->
+
+		<!-- START CUNTING -->
+		<section class="cunting " style="background-image: url(assets/img/bg/cunting-img.jpg); background-size:cover; background-position: center center; background-attachment: fixed;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="cunting_content text-center">
+							<h4><i class="cunting-margin fa fa-download"></i><strong>10M</strong></h4>
+							<p>Total Download</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="cunting_content text-center">
+							<h4><i class="cunting-margin fa fa-users"></i><strong>5000+</strong></h4>
+							<p>Users Reviews</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="cunting_content text-center">
+							<h4><i class="cunting-margin fa fa-pie-chart"></i><strong>250K</strong></h4>
+							<p>Active Install</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="cunting_content text-center">
+							<h4><i class="cunting-margin fa fa-rocket"></i><strong>150K</strong></h4>
+							<p>Subscribers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END CUNTING -->
+		
+		
+		<!-- START COMPANY PARTNER LOGO  -->
+		<section class="partner-logo section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center" data-aos="fade-up">
+						<div class="section-title">
+							<h2>Our partner</h2>
+							<div class="line"></div>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+						</div>	
+					</div><!-- END COL -->
+				</div><!-- END ROW -->					
+				<div class="row">
+					<div class="col-md-12">
+						<div class="partner  wow fadeInRight">
+							<a href="#"><img src="assets/img/partner/1.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/2.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/3.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/4.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/5.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/6.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/7.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/8.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/9.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/10.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/1.jpg" alt="image"></a>
+							<a href="#"><img src="assets/img/partner/2.jpg" alt="image"></a>
+						</div>
+					</div><!-- END COL  -->
+				</div><!--END  ROW  -->
+			</div><!-- END CONTAINER  -->
+		</section>
+		<!-- END COMPANY PARTNER LOGO -->
+		
+		<!-- START NEWS -->	
+		<!-- <section id="news" class="news-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title text-center wow zoomIn">
+							<h2>Btc News</h2>
+							<div class="line"></div>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div id="news-slider" class="owl-carousel">
+							<div class="post-slide">
+								<div class="post-img">
+									<img src="assets/img/news/img-1.jpg" alt="">
+									<div class="post-date">
+										<span class="date">3</span>
+										<span class="month">March</span>
+									</div>
+								</div>
+								<div class="post-content">
+									<h3 class="post-title">
+										<a href="#">Latest News Post</a>
+									</h3>
+									<p class="post-description">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa......
+									</p>
+									<a href="#" class="read-more">read more</a>
+								</div>
+							</div>
+							<div class="post-slide">
+								<div class="post-img">
+									<img src="assets/img/news/img-2.jpg" alt="">
+									<div class="post-date">
+										<span class="date">5</span>
+										<span class="month">March</span>
+									</div>
+								</div>
+								<div class="post-content">
+									<h3 class="post-title">
+										<a href="#">Latest News Post</a>
+									</h3>
+									<p class="post-description">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa......
+									</p>
+									<a href="#" class="read-more">read more</a>
+								</div>
+							</div>
+							<div class="post-slide">
+								<div class="post-img">
+									<img src="assets/img/news/img-3.jpg" alt="">
+									<div class="post-date">
+										<span class="date">8</span>
+										<span class="month">March</span>
+									</div>
+								</div>
+								<div class="post-content">
+									<h3 class="post-title">
+										<a href="#">Latest News Post</a>
+									</h3>
+									<p class="post-description">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa......
+									</p>
+									<a href="#" class="read-more">read more</a>
+								</div>
+							</div>
+							<div class="post-slide">
+								<div class="post-img">
+									<img src="assets/img/news/img-4.jpg" alt="">
+									<div class="post-date">
+										<span class="date">10</span>
+										<span class="month">March</span>
+									</div>
+								</div>
+								<div class="post-content">
+									<h3 class="post-title">
+										<a href="#">Latest News Post</a>
+									</h3>
+									<p class="post-description">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa......
+									</p>
+									<a href="#" class="read-more">read more</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</section> -->
+		<!-- END NEWS -->
+		
+		<!-- START CONTACT FORM-->
+		<section id="contact" class="contact_area" style="background-image: url(assets/img/bg/contact-bg.jpg); background-size:cover; background-position:center center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title contact-title text-center wow zoomIn">
+							<h2>Contact us</h2>
+							<div class="line"></div>
+							<p>If you have any question, get in touch here.</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-8">
+						<div class="contact">
+							<form class="form" name="enq" method="post" action="contact.php" onsubmit="return validation();">
+								<div class="row">
+									<div class="form-group col-md-6">
+										<input type="text" name="name" class="form-control" id="first-name" placeholder="Name" required="required">
+									</div>
+									<div class="form-group col-md-6">
+										<input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
+									</div>
+									<div class="form-group col-md-12">
+										<input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required="required">
+									</div>
+									<div class="form-group col-md-12">
+										<textarea rows="6" name="message" class="form-control" id="description" placeholder="Your Message" required="required"></textarea>
+									</div>
+									<div class="col-md-12">
+										<div class="actions">
+											<input type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-lg btn-contact-bg" title="Submit Your Message!" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div><!--- END COL -->	
+					<div class="col-xs-12 col-sm-4">
+						<div class="contact_address">
+							<div class="single-address">
+								<i class="fa fa-rocket"></i>
+								<h4>Our Location</h4>
+								<p>CoinGet 340 6th Street, Suite 301<br>San Francisco <br> CA 94103</p>
+							</div>
+							<div class="single-address wow fadeInLeft">
+								<i class="fa fa-phone"></i>
+								<h4>Call us on</h4>
+								<p>(+1) 415 310 2296 <br> (+1) 617 497 8200</p>
+							</div>
+							<div class="single-address wow fadeInLeft">
+								<i class="fa fa-envelope"></i>
+								<h4>Send your message</h4>
+								<p>support@coinget.com<br>admin@example.com</p>
+							</div>
+						</div>
+					</div><!-- END COL -->
+				</div><!--- END ROW -->				
+			</div><!--- END CONTAINER -->	
+		</section>
+		<!-- END CONTACT FORM -->
+		
+		<!-- START FOOTER TOP -->
+			<footer class="footer_top section-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-4">
+							<div class="footer_top_about">
+								<img src="assets/img/logo.png" alt="images" />
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor massa sed velit egestas vulputate. Morbi turpis tellus, porta in cursus at, finibus vitae dui. Nam mollis quam a</p>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="footer_top_link">
+								<h3 class="footer_title">Latest News</h3>
+								<div class="footer_news">
+									<div class="footer_news_content">
+										<div class="footer_news_img">
+											<a href="#"><img class="img-responsive" src="assets/img/footer/img-1.jpg" alt="images"/></a>
+										</div>
+										<div class="footer_news_text">
+											<a href="#">
+												<h4>Marketing and Sales Target</h4>
+												<span>January 18,2018</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="footer_news">
+									<div class="footer_news_content">
+										<div class="footer_news_img">
+											<a href="#"><img class="img-responsive" src="assets/img/footer/img-2.jpg" alt="images"/></a>
+										</div>
+										<div class="footer_news_text">
+											<a href="#">
+												<h4>Marketing and Sales Target</h4>
+												<span>January 18,2018</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="footer_news">
+									<div class="footer_news_content footer_news_bottom">
+										<div class="footer_news_img">
+											<a href="#"><img class="img-responsive" src="assets/img/footer/img-3.jpg" alt="images"/></a>
+										</div>
+										<div class="footer_news_text">
+											<a href="#">
+												<h4>Marketing and Sales Target</h4>
+												<span>January 18,2018</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- END COL -->
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="footer_top_contact">
+								<h3 class="footer_title">Contact Us</h3>
+								<h5><i class="fa fa-map-marker"></i>2369 Robinson Lane jackson,OH 45640</h5>
+								<h5><i class="fa fa-phone"></i>(+1)415 310 2296</h5>
+								<h5><i class="fa fa-envelope"></i>support@coinget.com</h5>
+								<h5><i class="fa fa-globe"></i>www.example.com</h5>
+								<div class="footer_subscribe">
+									<form action="#" class="subscribe">
+										<input type="text" class="subscribe__input" placeholder="Enter your Email">
+										<button type="button" class="subscribe__btn"><i class="fa fa-paper-plane-o"></i></button>
+									</form>
+								</div>
+							</div>
+						</div><!-- END COL -->
+					</div><!-- END EOW -->
+				</div><!-- END CONTAINER -->
+			</footer>
+		<!-- END FOOTER TOP --> 
+		
+		<!-- START FOOTER -->
+		<div class="footer">
+			<div class="container">
+				<div class="row">					
+					<div class="wow zoomIn col-xs-12">
+						<div class="footer_social">
+							<ul>
+								<li><a class="f_facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="f_twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="f_google" href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a class="f_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a class="f_youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+								<li><a class="f_skype" href="#"><i class="fa fa-skype"></i></a></li>
+							</ul>
+						</div>
+						<div class="copyright">
+							<p>Copyright &copy; 2018 | CoinGet</p>
+						</div><!--- END FOOTER COPYRIGHT -->
+					</div><!--- END COL -->				
+				</div><!--- END ROW -->				
+			</div><!--- END CONTAINER -->
+		</div>
+		<!-- END FOOTER -->		
+		
+		<!-- Latest jQuery -->
+			<script src="assets/js/jquery-1.12.4.min.js"></script>
+		<!-- Latest compiled and minified Bootstrap -->
+			<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<!-- modernizer JS -->		
+			<script src="assets/js/modernizr-2.8.3.min.js"></script>														
+		<!-- stellar js -->
+			<script src="assets/js/jquery.stellar.min.js"></script>				
+		<!-- owl-carousel min js  -->
+			<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+		<!-- MAGNIFICANT JS -->
+			<script src="assets/js/jquery.magnific-popup.min.js"></script>	
+		<!-- scrolltopcontrol js -->
+			<script src="assets/js/scrolltopcontrol.js"></script>			
+		<!-- form-contact js -->
+			<script src="assets/js/form-contact.js"></script>	
+		<!-- jquery.leanModal.min JS -->	
+			<script src="assets/js/jquery.leanModal.min.js"></script>
+		<!-- popup JS -->	
+			<script src="assets/js/popup.js"></script>	
+		<!-- switcher js -->
+			<script src="assets/js/switcher.js"></script>			
+		<!-- scripts js -->
+			<script src="assets/js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+mat-sidenav-container.m2app-dark {
+  background: black;
+  border-radius: 10px;
+}
+
+mat-sidenav-container {
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.6);
+} 
+
+mat-form-field {
+  text-align:center;
+}
+mat-option{
+  text-align:center;
+}
+
+mat-card {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+mat-header-cell,mat-cell {
+  display:flex;
+  justify-content:center;
+}
+
+mat-header-cell{
+  font-size: 20px;
+}
+
+input {
+  margin: .4rem;
+}
+
+body { padding-bottom: 5rem; }
+// h1,p {padding: 0 5%;}
+//h1 {padding: 0 5%;}
+
+
+table {
+  border-spacing: 20px;
+  border-collapse: separate;
+}
+
+h4{
+  color: white;
+}
+.exchange-name{
+  color: white;
+}
+
+.list-wrpaaer {
+  height: 30px;
+}
+
+.ex-prices-div {
+  overflow-x: auto;
+}
+
+.ex-prices-div .ex-prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ex-prices-div .ex-prices .list-item {
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ex-prices .list-item .list-item-currency {
+  white-space: nowrap;
+}
+
+.list-item {
+  // width: 10%;
+  // float: left;
+  // text-align: left;
+  font-size: 14px;
+  letter-spacing: .85px;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:1024px) {
+  .ex-prices {
+    padding-left: 0px; 
+  }
+}
+.list-item-currency{
+  color: #fff;
+  position: relative;
+  font-size: 14px;
+}
+@media only screen and (max-width:1024px) {
+  .list-item-currency {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .list-item-currency {
+    font-size: 9px;
+  }
+}
+
+.list-item-currency.upgrade {
+  color: #0decec;
+}
+.list-item-currency.downgrade {
+  color: #ffc139;
+}
